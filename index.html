@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/carousal.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media-queries.css" />
+    <script src="js/script.js" defer></script>
+    <script src="js/carousal.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Infobese.</div>
+    </header>
+    <nav>
+      <ul class="nav">
+        <li>Home</li>
+        <li>Courses</li>
+        <li>Contact</li>
+        <li>Research</li>
+        <li>Academics</li>
+        <li>Competitions</li>
+        <li>Join</li>
+      </ul>
+      <div class="navMobile">
+        <div>
+          <marquee behavior="scroll" direction="left"
+            >✸ This this just moves continuously towwards left ✸</marquee
+          >
+          <marquee behavior="scroll" direction="right">
+            ✸ This this just moves continuously towwards right ✸</marquee
+          >
+        </div>
+        <div onclick="toggleDrawer()">
+          <svg
+            class="ham hamRotate ham7"
+            viewBox="0 0 100 100"
+            width="60"
+            onclick="this.classList.toggle('active')"
+          >
+            <path
+              class="line top"
+              d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013"
+            />
+            <path class="line middle" d="m 70,50 h -40" />
+            <path
+              class="line bottom"
+              d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="drawer hidden" id="drawer">
+        <ul class="nav">
+          <li>Home</li>
+          <li>Courses</li>
+          <li>Contact</li>
+          <li>Research</li>
+          <li>Academics</li>
+          <li>Competitions</li>
+          <li>Join</li>
+        </ul>
+      </div>
+    </nav>
+    <div class="carousal">
+      <div class="carousel-wrapper">
+        <div class="carouselBox">
+          <img
+            class="carousel__photo initial"
+            src="http://placekitten.com/1600/900"
+          />
+          <img
+            class="carousel__photo"
+            src="http://placekitten.com/g/1600/900"
+          />
+          <img class="carousel__photo" src="http://placekitten.com/1600/900" />
+          <img
+            class="carousel__photo"
+            src="http://placekitten.com/g/1600/900"
+          />
+          <img class="carousel__photo" src="http://placekitten.com/1600/900" />
+
+          <div class="carousel__button--next"></div>
+          <div class="carousel__button--prev"></div>
+        </div>
+      </div>
+      <div class="extraInfo">
+        <div class="profileCard">
+          <div class="logo"></div>
+          <div class="info">
+            <div class="name">Anurag Shukla</div>
+            <div class="desg">not Important Person</div>
+          </div>
+        </div>
+
+        <div class="profileCard">
+          <div class="logo"></div>
+          <div class="info">
+            <div class="name">Anurag Shukla</div>
+            <div class="desg">Important Person</div>
+          </div>
+        </div>
+        <div class="profileCard">
+          <div class="logo"></div>
+          <div class="info">
+            <div class="name">Anurag Shukla</div>
+            <div class="desg">Very imp. Person</div>
+          </div>
+        </div>
+        <div class="profileCard">
+          <div class="logo"></div>
+          <div class="info">
+            <div class="name">Anurag Shukla</div>
+            <div class="desg">Full Stack Developer</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="services">
+      <div class="info" id="info">
+        <div class="tabs" id="tabs">
+          <div onclick="changeActiveTab(0, 'notice')" class="tab activeTab">
+            Notices
+          </div>
+          <div onclick="changeActiveTab(1, 'announcement')" class="tab">
+            Announcements
+          </div>
+        </div>
+
+        <div id="scroller">
+          <div class="notice" id="notice">
+            <ul class="scroller" id="noticeList"></ul>
+          </div>
+          <div class="announcement hidden" id="announcement">
+            <ul class="scroller" id="announcementList"></ul>
+          </div>
+        </div>
+      </div>
+      <div class="about">
+        <div class="tabs heading">
+          <h2>About Us</h2>
+        </div>
+        <div class="body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolore ea
+          commodi illum ex exercitationem facilis voluptatem mollitia, maxime
+          odit veritatis fugiat aliquid dolor, dolorem soluta? Non mollitia
+          voluptatibus perferendis explicabo officia voluptatum neque, ea nisi
+          eos ex doloribus maxime unde voluptate inventore minus facere beatae
+          consequuntur tempora consequatur eius itaque nihil ab! Eaque corrupti
+          eos atque et repudiandae magni minus sunt consequatur excepturi?
+          Possimus consequuntur veniam incidunt ratione quibusdam aliquam
+          aperiam consectetur laudantium perspiciatis ab, error in laboriosam
+          neque sequi mollitia omnis velit quae enim et. Similique vitae
+          architecto tempore libero, qui placeat odit quisquam voluptatem
+          repellat deserunt a atque, beatae, error quis consequatur harum
+          asperiores eaque et maiores esse id veniam adipisci? Eveniet quod
+          quibusdam blanditiis atque sed omnis consequuntur maiores ullam sunt
+          aut, eos quam maxime! Aut itaque ipsam, vel in vitae aperiam beatae,
+          amet voluptates dolorem officia aspernatur nemo ab doloremque, ribus
+          vero porro, nam sed distinctio facere modi voluptas tempora in vel.
+          Explicabo alias aperiam sapiente porro asperiores dicta et dolorum
+          tempora ea incidunt dignissimos reiciendis officia distinctio laborum,
+          sit non nostrum tempore error molestias quod. Quo, totam similique
+          voluptas ipsam animi molestias, odit facere eligendi, atque
+          accusantium esse porro incidunt aliquam accusamus in possimus dolor
+          voluptatum! Aut necessitatibus molestias, consectetur debitis mollitia
+          eligendi expedita harum beatae quasi possimus excepturi esse itaque
+          odit nobis recusandae hic at. Nemo ex voluptates tenetur rerum iure
+          quae voluptate fugit! Reiciendis, aliquam sunt animi quibusdam
+          similique dignissimos adipisci inventore atque porro, autem architecto
+          qui fuga dolore libero minus, nihil repellendus sapiente nam mollitia
+          molestias repellat rerum! Quas beatae delectus aperiam adipisci
+          suscipit ducimus totam ab quo? Excepturi, quam.
+        </div>
+      </div>
+      <div class="btns">
+        <div class="tabs" id="tabs">
+          <div
+            onclick="switchService(0, 'studentServices')"
+            class="tab activeTab"
+          >
+            Students
+          </div>
+          <div onclick="switchService(1, 'teacherServices')" class="tab">
+            Teachers
+          </div>
+        </div>
+
+        <div class="btnsGrid" id="studentServices"></div>
+        <div class="btnsGrid hidden" id="teacherServices"></div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer-left col-md-4 col-sm-6">
+        <p class="about">
+          <span> About the company</span> Ut congue augue non tellus bibendum,
+          in varius tellus condimentum. In scelerisque nibh tortor, sed rhoncus
+          odio condimentum in. Sed sed est ut sapien ultrices eleifend. Integer
+          tellus est, vehicula eu lectus tincidunt, ultricies feugiat leo.
+          Suspendisse tellus elit, pharetra in hendrerit ut, aliquam quis augue.
+          Nam ut nibh mollis, tristique ante sed, viverra massa.
+        </p>
+        <div class="icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-google-plus"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-center col-md-4 col-sm-6">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span> Street name and number</span> Gorakhpur, India</p>
+        </div>
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>(+91) 7068179922</p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="#">www.anuragshukla@gmail.com</a></p>
+        </div>
+      </div>
+      <div class="footer-right col-md-4 col-sm-6">
+        <h2>Infobese <span>Inc.</span></h2>
+        <p class="menu">
+          <a href="#"> Home</a> | <a href="#"> About</a> |
+          <a href="#"> Services</a> | <a href="#"> Portfolio</a> |
+          <a href="#"> News</a> |
+          <a href="#"> Contact</a>
+        </p>
+        <p class="name">Anurag Shukla &copy; 2023</p>
+      </div>
+    </footer>
+  </body>
+</html>
