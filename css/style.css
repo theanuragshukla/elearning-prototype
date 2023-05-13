@@ -388,6 +388,7 @@ ul.scroller li {
   align-items: center;
   color: orangered;
   border-radius: 8px;
+
   box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.7),
     inset -2px -2px 4px rgba(255, 255, 255, 0.5),
     inset 2px 2px 2px rgba(255, 255, 255, 0.075),
@@ -444,6 +445,105 @@ ul.scroller li {
   cursor: pointer;
   color: orangered;
 }
+
+.features {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.cards {
+  overflow: scroll;
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  padding: 20px;
+}
+
+.features .heading {
+  font-size: 1.2rem;
+  padding: 15px auto;
+  box-shadow: none;
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.card p {
+  line-height: 1.5;
+  margin: 0 auto 1em;
+}
+
+.card {
+  display: block;
+  min-width: min(360px, 90%);
+  background-color: #efefef;
+  border-radius: 8px;
+  padding: 0.75rem;
+  padding: 1rem;
+  box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.6),
+    -2px -2px 4px rgba(255, 255, 255, 0.4),
+    2px 2px 2px rgba(255, 255, 255, 0.05), 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.card:hover {
+  box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.7),
+    inset -2px -2px 4px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 2px rgba(255, 255, 255, 0.075),
+    inset 2px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  text-align: center;
+  border-radius: 8px;
+  contain: contents;
+  fit: fill-box;
+  margin-bottom: 1rem;
+  box-shadow: 0 16px 24px -12px rgba(0, 0, 0, 0.15);
+}
+.card img:hover {
+  transform: scale(1.01);
+}
+.card h1,
+.card h2,
+.card h3,
+.card h4,
+.card h5,
+.card h6 {
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+.cta {
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: dimgray;
+  box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.6),
+    -2px -2px 4px rgba(255, 255, 255, 0.4),
+    2px 2px 2px rgba(255, 255, 255, 0.05), 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.cta p {
+  text-align: center;
+  line-height: 180%;
+  color: dimgray;
+}
+
+.cta button {
+  height: 50px;
+  background: orangered;
+  color: white;
+  padding: 5px 10px;
+  font-size: 1.2rem;
+}
+
 .hidden {
   display: none;
   overflow: hidden;
