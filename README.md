@@ -1,6 +1,6 @@
 # elearning landing page
 
-### deployed on [`https://anuragshukla.xyz/elearning-prototype`](https://anuragshukla.xyz/elearning-prototype/)
+### deployed on [`https://theanuragshukla.github.io/elearning-prototype`](https://theanuragshukla.github.io/elearning-prototype/)
 
 ## Tech stack
 - HTML
